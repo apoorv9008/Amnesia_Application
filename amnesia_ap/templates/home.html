@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>
+        Home Page - Enter your Telephone Number
+    </title>
+</head>
+<body>
+    <h1>Enter your Telephone Number:</h1>
+    <h4>10 digit number preceded by the area code including '+' </h4>
+    {% if error_message %}<h4><strong>{{ error_message }}</strong></h4>{% endif %}
+    <form method="post" action="/amnesia_ap/home">
+        {% csrf_token %}
+        Name : <input type="text" name="name" id="name"/>
+        <br>
+        Phone Number : <input type="text" name="number" id="number"/>
+        <br> 
+        <input type="submit" value="Submit" />
+    </form>
+<br>
+
+</body>
+</html>
