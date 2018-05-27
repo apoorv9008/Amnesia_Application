@@ -17,7 +17,7 @@ Please do the following:
 
 # Instructions for starting the application
 
-It's an amnesia application built in Django framework which used to send SMS to a user hourly depending on the availability of the User
+It's an amnesia application built in Django framework which is used to send SMS of name on the verified phone number hourly depending on the availability of the User
 <br>
 The Web Application Amnesia requires Redis to function, and operates on PORT 6379
 Redis 2.10.5 is used for this application.
