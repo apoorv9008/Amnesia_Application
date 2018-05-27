@@ -28,4 +28,4 @@ Once redis-server is called and is active. We can run the Django server using `p
 
 Please swap in your Twilio- TWILIO_ACCOUNT_SID and TWILIO_AUTH_TOKEN in settings.py file to avoid authentication error. 
 <br>
-It is important to note that one must register their phone number on their free Twilio account and verify it via SMS. Non registered numbers cannot have SMSs sent from a free account.
+It is important to note that one must register their phone number on their free Twilio account and verify it via SMS. Non registered numbers cannot have SMS's sent from a free account.
