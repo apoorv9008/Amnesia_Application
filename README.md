@@ -1,5 +1,6 @@
-*Amnesia_Application*
-Software Engineer Challenge
+# Amnesia_Application
+
+Problem Statement
 
 John has a certain kind of amnesia. Every hour, he forgets his name. He’s tired of setting an alarm on his very old phone which doesn’t allow setting cron alarm jobs.
 
@@ -14,8 +15,17 @@ Please do the following:
 3. Try resending an SMS if it fails, but retry no more than 5 times. (There is only so much you can do!)
 4. The web application should also log all the failed messages and tell John for how many hours the application has been running.
 
+# Instructions for starting the application
 
 It's an amnesia application built in Django framework which used to send SMS to a user hourly depending on the availability of the User
+<br>
+The Web Application Amnesia requires Redis to function, and operates on PORT 6379
+Redis 2.10.5 is used for this application.
+Once redis-server is called and is active. We can run the Django server using `python3 manage.py runserver 8000` and go to `http://127.0.0.1:8000/amnesia_ap/home` from the web browser.
 
-*Instructions*
-
+<br>Open 2 other terminals also in the folder where manage.py exists and run :<br>
+1. celery -A amnesia worker -l info<br>
+2. celery -A amnesia beat -l info<br>
+<br>
+Please swap in your Twilio- TWILIO_ACCOUNT_SID and TWILIO_AUTH_TOKEN in settings.py file to avoid authentication error. 
+<br>It is important to note that one must register their phone number on their free Twilio account and verify it via SMS. Non registered numbers cannot have SMSs sent from a free account.
