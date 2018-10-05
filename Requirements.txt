@@ -1,4 +1,4 @@
-Django==2.0.2
+Django==2.0.8
 HTMLParser==0.0.2
 celery==3.1.23
 django-common-helpers==0.8.0
